@@ -81,7 +81,7 @@ div{
     height: 90px;
     width: 80%;
     background-color: rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
