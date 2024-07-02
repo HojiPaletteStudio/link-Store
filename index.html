@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <section id="box-1">
+                <div class="pixel-font" style="font-size: 0.5rem">Find</div>
+                <div style="font-size: 1rem" class="roboto-font">YourStream</div>
+                <div class="pixel-font" style="font-size: 0.5rem">Assets</div>
+            </section>
+            <section id="box-2">
+                <div class="container-shop">
+                    <div class="img" onclick="visitKofi()">
+                        <img src="./assets/kofi-icon.png" width="50px">
+                    </div>
+                    <div class="box-btn" onclick="visitKofi()">
+                        <div class="link roboto-font">ko-fi.com/hojipalettestudio</div>
+                        <button class="btn roboto-font" id="ko-fi" ><span>shop now</span></button>
+                    </div>
+                </div>
+                <div class="container-shop" >
+                    <div class="img" onclick="visitEtsy()">
+                        <img src="./assets/etsy-icon.png" width="50px">
+                    </div>
+                    <div class="box-btn" onclick="visitEtsy()">
+                        <div class="link roboto-font" >etsy.com/shop/YourStream</div>
+                        <button class="btn roboto-font"  ><span>shop now</span></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-size: 45px;
+    color: aliceblue;
+}
+.pixel-font{
+  font-family: "Pixelify Sans", sans-serif;
+  /* --pixel-font-optical-sizing: auto; */
+  /* --pixel-font-weight: <weight>; */
+  font-style: normal;
+}
+.roboto-font {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+}
+body{
+    font-size: 0.3rem;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    background-color: rgb(20, 20, 20); 
+}
+#main{
+    height: 100vh;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main>div{
+    /* background-color: aqua; */
+    margin-left: 0;
+    margin-right: 0;
+    /* border: 2px solid; */
+    height: fit-content;
+    width: 100%;
+}
+section{
+    margin-left: auto;
+    margin-right: auto;  
+    max-width: 350px;
+}
+
+#box-1{
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+div{
+    text-align: center;
+}
+.container-shop{
+    height: 100px;
+    /* background-color: rgb(246, 244, 241); */
+    margin-bottom: 30px ;   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* width: 90%; */
+    
+}
+
+.img{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 35px;
+    transform: translate(15px);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-btn{
+    height: 90px;
+    width: 80%;
+    background-color: rgb(255, 243, 220);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-15px);
+    /* padding-left: 35px; */
+}
+.link{
+    /* background-color: rgb(207, 157, 254); */
+    height: 20px;
+    width: 70%;
+    color: black;
+}
+.btn{
+    font-size: 0.35rem;
+    background-color: rgb(132, 228, 255);
+    height: 35px;
+    width: 35%;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+}
+.animetionGlow{
+    color: #fff;
+    animation: glow2 2s ease-in-out infinite alternate;
+}
+
+button:active, button:hover{
+    color: #fff;
+    text-align: center;
+    animation: glow2 1s ease-in-out infinite alternate;
+    
+}
+:root{
+    --color-glow-1:  #32b7ff;
+    --color-glow-2: rgb(91, 255, 255);
+    --color-glow-3: rgb(255, 115, 0);
+    --color-glow-3: rgb(255, 222, 74);
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 
+      0 0 15px var(--color-glow-1), 0 0 20px var(--color-glow-1),
+       0 0 25px var(--color-glow-1), 0 0 30px var(--color-glow-1),
+        0 0 35px var(--color-glow-1);
+    }
+    to {
+      text-shadow: 0 0 10px #ffffff, 0 0 15px var(--color-glow-2), 
+      0 0 20px var(--color-glow-2), 0 0 25px var(--color-glow-2), 
+      0 0 30px var(--color-glow-2), 0 0 35px var(--color-glow-2), 
+      0 0 40px var(--color-glow-2);
+    }
+  }
+
+  @-webkit-keyframes glow2 {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 
+      0 0 15px var(--color-glow-3), 0 0 20px var(--color-glow-3),
+       0 0 25px var(--color-glow-3), 0 0 30px var(--color-glow-3),
+        0 0 35px var(--color-glow-3);
+    }
+    to {
+      text-shadow: 0 0 10px #ffffff, 0 0 15px var(--color-glow-4), 
+      0 0 20px var(--color-glow-4), 0 0 25px var(--color-glow-4), 
+      0 0 30px var(--color-glow-4), 0 0 35px var(--color-glow-4), 
+      0 0 40px var(--color-glow-4);
+    }
+  }
+@media screen and (max-width: 330px) {
+    html{
+        font-size: 35px;
+    }
+    .box-btn{
+        height: 80px;
+        width: 70%;
+        /* padding-left: 35px; */
+    }
+    .btn{
+        height: 25px;
+        width: 35%;
+        margin-top: 5px;
+    }
+  }
